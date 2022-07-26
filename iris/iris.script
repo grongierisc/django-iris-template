@@ -1,5 +1,5 @@
  zn "USER"
- zpm "install sslclient"
+ zpm "install posts-and-tags"
 
  zn "%SYS"
  Do ##class(Security.Users).UnExpireUserPasswords("*")
