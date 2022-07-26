@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+
+  web:
+    build: ./app
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app/:/usr/src/app/
+    ports:
+      - 8000:8000
+    environment:
+      - ENGINE=django_iris
+      - NAME=USER
+      - USER=SuperUser
+      - PASSWORD=SYS
+      - HOST=iris
+      - PORT=1972
+    depends_on:
+      - iris
+
+  iris:
+    image: intersystemsdc/iris-community:latest
+    ports:
+      - 1972
+      - 52773
+    environment:
+      - ISC_DATA_DIRECTORY=/durable/iris
+      - IRIS_USER=SuperUser
+      - IRIS_PASSWORD=SYS
+    volumes:
+      - "./durable:/durable"
