@@ -20,7 +20,8 @@ services:
       - iris
 
   iris:
-    image: intersystemsdc/iris-community:latest
+    build: ./iris
+    command: --check-caps false
     ports:
       - 1972
       - 52773
