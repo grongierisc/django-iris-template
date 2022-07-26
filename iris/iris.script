@@ -1,0 +1,7 @@
+ zn "USER"
+ zpm "install sslclient"
+
+ zn "%SYS"
+ Do ##class(Security.Users).UnExpireUserPasswords("*")
+
+ h
