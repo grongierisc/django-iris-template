@@ -1,0 +1,34 @@
+{
+    "files.associations": {
+    
+        "Dockerfile*": "dockerfile",
+        "iris.script": "objectscript"
+      },
+    "objectscript.export": {
+      "folder": "iris/src",
+      "addCategory": false,
+      "map": {},
+      "atelier": true,
+      "generated": false,
+      "filter": "",
+      "exactFilter": "",
+      "category": "*",
+      "noStorage": false,
+      "dontExportIfNoChanges": false,
+      "maxConcurrentConnections": 0,
+      "mapped": true
+    },
+    "objectscript.conn" :{
+      "ns": "USER",
+      "username": "_SYSTEM",
+      "password": "SYS",
+      "docker-compose": {
+        "service": "iris",
+        "internalPort": 52773
+      },
+      "active": false,
+      "links": {
+        "django": "http://localhost:8000/"
+      }
+    }
+}
