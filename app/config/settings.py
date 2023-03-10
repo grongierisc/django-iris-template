@@ -28,6 +28,33 @@ SECRET_KEY = 'django-insecure-^&aa+8sq1su0ti-7v$e5z#8kngrd1+53wlp&9wdk7g6!te)+fr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# LOGGING = {
+#      'version': 1,
+#      'disable_existing_loggers': False,
+#      'formatters': {
+#          'verbose': {
+#              'format': '%(asctime)s-%(module)s-%(levelname)s :: %(message)s'
+#          },
+#          'simple': {
+#              'format': '%(levelname)s :: %(message)s'
+#          }
+#      },
+#      'handlers': {
+#            'console': {
+#              'level': 'DEBUG',
+#              'class': 'logging.StreamHandler',
+#              'formatter': 'verbose'
+#          },
+#      },
+#      'loggers': {
+#          'django': {
+#              'handlers': ['console'],
+#              'propagate': False,
+#              'level': 'DEBUG'
+#          },
+#      }
+#  }
+
 ALLOWED_HOSTS = ["localhost", "127.0.0.1" ,"[::1]", "0.0.0.0"]
 
 
@@ -114,10 +141,6 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
-
-USE_I18N = True
-
-USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
