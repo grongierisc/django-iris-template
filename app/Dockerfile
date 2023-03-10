@@ -1,17 +1,20 @@
 # pull official base image
-FROM python:3.9.6-alpine
+FROM python:3.9.6
 
 # set work directory
 WORKDIR /usr/src/app
+
+# add nc for healthcheck
+RUN apt-get update && apt-get install -y netcat
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 # install dependencies
-RUN pip install --upgrade pip
+RUN pip3 install --upgrade pip
 COPY ./requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # copy entrypoint.sh
 COPY ./entrypoint.sh .

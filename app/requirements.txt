@@ -1,4 +1,4 @@
-https://github.com/intersystems-community/iris-driver-distribution/raw/main/DB-API/intersystems_irispython-3.2.0-py3-none-any.whl
+irissqlcli==0.4.0
 Django~=4.0.2
 django-iris>=0.1.13
 gunicorn~=20.1.0
