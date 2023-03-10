@@ -17,6 +17,7 @@ fi
 # python manage.py flush --no-input
 python manage.py migrate
 # create superuser
-python manage.py createsuperuser --no-input --username admin --email admin@admin.fr --password admin
+export DJANGO_SUPERUSER_PASSWORD=admin
+python manage.py createsuperuser --no-input --username admin --email admin@admin.fr
 
 exec "$@"
