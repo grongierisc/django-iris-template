@@ -26,7 +26,7 @@
         "service": "iris",
         "internalPort": 52773
       },
-      "active": false,
+      "active": true,
       "links": {
         "django": "http://localhost:8000/"
       }
