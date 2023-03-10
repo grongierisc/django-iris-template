@@ -22,3 +22,14 @@ Run the IRIS container with your project:
 docker-compose up -d
 ```
 
+## Check data in Django
+
+Open a browser and go to http://localhost:8000/admin
+
+Login with the following credentials:
+
+```sh
+username: admin
+password: admin
+```
+
