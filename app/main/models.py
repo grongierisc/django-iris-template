@@ -35,7 +35,7 @@ class CommunityPost(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'community"."post'
+        db_table = 'community.post'
 
 
 class CommunityComment(models.Model):
@@ -55,7 +55,7 @@ class CommunityComment(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'community"."comment'
+        db_table = 'community.comment'
         unique_together = (('type', 'id'),)
 
 
@@ -66,4 +66,4 @@ class CommunityTag(models.Model):
 
     class Meta:
         managed = False
-        db_table = 'community"."tag'
+        db_table = 'community.tag'
