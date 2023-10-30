@@ -2,3 +2,6 @@ Django
 django-iris
 irissqlcli
 gunicorn
+djangorestframework
+markdown
+django-filter
