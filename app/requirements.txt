@@ -1,4 +1,4 @@
-Django~=4.0.2
-django_iris-0.1.15-py3-none-any.whl
+Django
+django-iris
 irissqlcli
-gunicorn~=20.1.0
+gunicorn

@@ -22,10 +22,9 @@ services:
   iris:
     build: ./iris
     ports:
-      - 1972
-      - 52773
+      - 63557:1972
+      - 63558:52773
     environment:
-      - ISC_DATA_DIRECTORY=/durable/iris
       - IRIS_USER=SuperUser
       - IRIS_PASSWORD=SYS
     volumes:
