@@ -33,3 +33,8 @@ username: admin
 password: admin
 ```
 
+## Check data in IRIS with djangorestframework
+
+Open a browser and go to http://localhost:8000/api
+
+
