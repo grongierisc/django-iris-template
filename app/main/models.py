@@ -7,7 +7,6 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
-
 class CommunityPost(models.Model):
     id = models.AutoField(db_column='ID',primary_key=True)  # Field name made lowercase.
     acceptedanswerts = models.DateTimeField(db_column='AcceptedAnswerTS', blank=True, null=True)  # Field name made lowercase.
@@ -67,3 +66,13 @@ class CommunityTag(models.Model):
     class Meta:
         managed = False
         db_table = 'community.tag'
+
+class IrisDemo(models.Model):
+    id = models.AutoField(db_column='ID', primary_key=True)  # Field name made lowercase.
+    age = models.IntegerField(db_column='Age', blank=True, null=True)  # Field name made lowercase.
+    name = models.CharField(db_column='Name', max_length=50 ,blank=True, null=True)  # Field name made lowercase.
+    stream = models.BinaryField(db_column='Stream', blank=True, null=True, editable=True)  # Field name made lowercase.
+
+    class Meta:
+        managed = False
+        db_table = 'iris.demo'
